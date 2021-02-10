@@ -1,9 +1,14 @@
 import React from 'react'
+import Input from '@material-ui/core/Input'
 
 const InputWord = props => {
   return (
     <>
-      <input onChange={props.onChange} value={props.keyword} />
+      <Input
+        placeholder='Search word on YouTube'
+        onChange={props.onChange}
+        value={props.keyword}
+      />
     </>
   )
 }

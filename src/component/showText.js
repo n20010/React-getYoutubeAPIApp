@@ -5,7 +5,7 @@ class ShowText extends React.Component {
     super(props)
     this.state = {
       text: 'Hello, User',
-      nav: '↓Type SerchWord↓'
+      nav: '↓Type SearchWord↓'
     }
   }
 
