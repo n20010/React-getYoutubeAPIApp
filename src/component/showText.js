@@ -1,25 +1,12 @@
 import React from 'react'
 
-class ShowText extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      text: 'Hello, User',
-      nav: '↓Type SearchWord↓'
-    }
-  }
-
-  render () {
-    return (
-      <>
-        <RenderText state={this.state.text} />
-        <RenderText state={this.state.nav} />
-      </>
-    )
-  }
-}
-
-const RenderText = props => {
-  return <h1>{props.state}</h1>
+const ShowText = props => {
+  const header = 'Hello, User'
+  return (
+    <>
+      <h1>{header}</h1>
+      <h1>{props.textStatus}</h1>
+    </>
+  )
 }
 export default ShowText

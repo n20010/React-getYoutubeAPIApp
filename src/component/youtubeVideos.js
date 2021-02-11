@@ -6,13 +6,14 @@ const YoutubeVideos = props => {
 
     return (
       <div key={video.id.videoId}>
+        <h2>{video.title}</h2>
         <iframe
           id='ytplayer'
           type='ytplayer'
           width='480'
           height='270'
           src={url}
-          frameborder='0'
+          frameBorder='0'
         />
       </div>
     )
