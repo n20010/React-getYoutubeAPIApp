@@ -10,7 +10,7 @@ const InputWord = props => {
           type='submit'
           variant='contained'
           color='primary'
-          onClick={props.handleChange}
+          onClick={props.onClick}
         >
           検索
         </Button>
@@ -18,7 +18,8 @@ const InputWord = props => {
       <Input
         id='InputBox'
         placeholder='Search on YouTube'
-        value={props.keyword}
+        onChange={props.onChange}
+        value={props.value}
       />
     </div>
   )
