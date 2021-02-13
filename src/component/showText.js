@@ -4,8 +4,8 @@ const ShowText = props => {
   const header = 'Hello, User'
   return (
     <>
-      <h1>{header}</h1>
-      <h1>{props.textStatus}</h1>
+      <h2>{header}</h2>
+      <h2>{props.textStatus}</h2>
     </>
   )
 }
