@@ -47,8 +47,8 @@ class App extends React.Component {
     return (
       <>
         <header>
-          <div class='container header-container'>
-            <div class='header-inner'>
+          <div className='container header-container'>
+            <div className='header-inner'>
               <h1>Youtube Searcher</h1>
             </div>
           </div>
@@ -60,11 +60,7 @@ class App extends React.Component {
           onChange={this.handleText}
           value={this.state.keyWord}
         />
-        <table>
-          <tbody>
-            <YoutubeVideos videos={this.state.videos} />
-          </tbody>
-        </table>
+        <YoutubeVideos videos={this.state.videos} />
       </>
     )
   }
