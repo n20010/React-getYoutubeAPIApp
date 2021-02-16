@@ -60,7 +60,9 @@ class App extends React.Component {
           onChange={this.handleText}
           value={this.state.keyWord}
         />
-        <YoutubeVideos videos={this.state.videos} />
+        <div className='wrapper'>
+          <YoutubeVideos videos={this.state.videos} />
+        </div>
       </>
     )
   }

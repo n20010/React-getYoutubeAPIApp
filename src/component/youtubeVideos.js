@@ -8,7 +8,7 @@ const YoutubeVideos = props => {
     const titleCutted = title.slice(0, 19) + '...'
 
     return (
-      <td key={video.id.videoId}>
+      <div key={video.id.videoId} className='videoBox'>
         <h2>{titleCutted}</h2>
         <iframe
           id='ytplayer'
@@ -26,17 +26,11 @@ const YoutubeVideos = props => {
         >
           チャンネルに移動
         </Button>
-      </td>
+      </div>
     )
   })
 
-  return (
-    <table>
-      <tbody>
-        <tr>{video}</tr>
-      </tbody>
-    </table>
-  )
+  return <>{video}</>
 }
 
 export default YoutubeVideos

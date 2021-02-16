@@ -61,8 +61,30 @@ header {
 .header-inner {
     align-items: center;
 }
-table {
-    margin:10px auto;
+
+.wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.videoBox {
+    float: left;
+    margin: 20px 10px;
+    padding: 8px;
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+     .wrapper {
+        flex-direction: row;
+     }
+
+     .videoBox {
+         width: 500px;
+     }
 }
 
 .InputBox {
